@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum StatusType: string {
+enum PriorityType: string {
     public const LOW = 'low';
 
     public const NORMAL = 'normal';
