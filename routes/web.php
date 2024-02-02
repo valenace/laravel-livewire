@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Tasks\TasksIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +24,5 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+    Route::get('/tasks', TasksIndex::class)->name('tasks.index');
 require __DIR__.'/auth.php';
